@@ -1,0 +1,59 @@
+.trabajos{
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    .trabajos__titulo{
+        @include titulo__seccion;
+        margin-bottom: 6rem;
+    }
+    .swiper{
+        .swiper-slide{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .trabajos__proyecto{
+                @include proyecto;
+            }
+        }
+        .swiper-pagination{
+            position: relative;
+            top: 0;
+            bottom: 0;
+            margin-top: 3rem;
+            .swiper-pagination-bullet{
+                opacity:0.3;
+                background-color: $acento-rojo;
+            }
+            .swiper-pagination-bullet-active{
+                opacity:1;
+                background-color: $acento-rojo;
+            }
+        }
+        .swiper-button-prev{
+            color:$secundario-naranja;
+            top:20%;
+            left: 35%;
+            opacity: 0.7;
+            transition:all 0.2s;
+            &:hover{
+                opacity: 1;
+            }
+            &:active{
+                color:$acento-rojo;
+            }
+        }
+        .swiper-button-next{
+            color:$secundario-naranja;
+            top:20%;
+            right:35%;
+            opacity: 0.7;
+            transition:all 0.2s;
+            &:hover{
+                opacity: 1;
+            }
+            &:active{
+                color:$acento-rojo;
+            }
+        }
+    }
+}
+
