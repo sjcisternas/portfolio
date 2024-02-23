@@ -23,6 +23,7 @@ html {
   font-size: 62.5%;
   background-color: #181310;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 html a {
   text-decoration: none;
@@ -45,6 +46,11 @@ html li {
 }
 html .selected {
   color: #F6270B;
+  transition: 0.3s;
+}
+
+section[id] {
+  scroll-margin-top: 12rem;
 }
 
 body header {
@@ -73,6 +79,12 @@ body header .header__navbar ul li {
   text-transform: uppercase;
   font-weight: 500;
 }
+body header .header__navbar ul li a {
+  transition: all 0.3s;
+}
+body header .header__navbar ul li a:hover {
+  color: #F6270B;
+}
 body header .header__idioma {
   padding-right: 14rem;
 }
@@ -85,6 +97,12 @@ body header .header__idioma ul {
 body header .header__idioma ul li {
   margin-left: 4rem;
   text-transform: uppercase;
+}
+body header .header__idioma ul li a {
+  transition: all 0.3s;
+}
+body header .header__idioma ul li a:hover {
+  color: #F6270B;
 }
 body main {
   padding-top: 21.3rem;
@@ -236,39 +254,52 @@ body main .portada img {
   display: flex;
   flex-direction: row;
 }
-.trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc div .trabajos__proyecto__desc_btn1 {
+.trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc div a {
+  width: 48.5%;
+  margin-right: 3%;
+}
+.trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc div a .trabajos__proyecto__desc_btn1 {
+  width: 100%;
+  color: #040001;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #FD6A00;
-  width: 50%;
   height: 4.3rem;
   border-style: none;
   border-radius: 0.5rem;
-  margin-right: 2rem;
+  color: #111111;
+  transition: all 0.2s;
 }
-.trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc div .trabajos__proyecto__desc_btn1 a {
-  color: #040001;
-  font-size: 1.4rem;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+.trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc div a .trabajos__proyecto__desc_btn1:hover {
+  background-color: #fe8128;
 }
-.trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc div .trabajos__proyecto__desc_btn2 {
+.trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc div a {
+  width: 48.5%;
+}
+.trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc div a .trabajos__proyecto__desc_btn2 {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  width: 50%;
   height: 4.3rem;
   border-style: solid;
   border-color: #FD6A00;
   border-radius: 0.5rem;
-}
-.trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc div .trabajos__proyecto__desc_btn2 a {
   color: #C7AA88;
   font-size: 1.4rem;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc div a .trabajos__proyecto__desc_btn2:hover {
+  background-color: #231c18;
 }
 .trabajos .swiper .swiper-pagination {
   position: relative;
@@ -360,20 +391,28 @@ footer .footer__contacto .footer__contacto-form .footer__contacto-msg {
   height: 20vh;
 }
 footer .footer__contacto .footer__contacto-form .footer__contacto-btn {
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #FD6A00;
-  width: 50%;
   height: 4.3rem;
   border-style: none;
   border-radius: 0.5rem;
-}
-footer .footer__contacto .footer__contacto-form .footer__contacto-btn a {
+  color: #111111;
+  width: 50%;
   color: #040001;
   font-size: 1.4rem;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+  transition: all 0.2s;
+}
+footer .footer__contacto .footer__contacto-form .footer__contacto-btn:hover {
+  cursor: pointer;
+  background-color: #fe8128;
 }
 footer .footer__redes {
   grid-area: redes;

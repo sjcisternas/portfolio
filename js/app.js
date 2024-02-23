@@ -5,6 +5,7 @@ const swiper = new Swiper('.swiper', {
   loop:false,
   slidesPerView: '2',
   centeredSlides:true,
+  allowTouchMove:false,
   coverflowEffect:{
     depth:500,
     modifier:1,

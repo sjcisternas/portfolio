@@ -37,7 +37,13 @@ html {
     }
     .selected{
         color: $acento-rojo;
+        transition: 0.3s;
     }
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 12rem; 
 }
 
 body{
@@ -63,6 +69,12 @@ body{
                     margin-right: 4rem;
                     text-transform: uppercase;
                     font-weight: 500;
+                    a{
+                        transition: all 0.3s;
+                        &:hover{
+                            color:$acento-rojo;
+                        }
+                    }
                 }
             }
         }
@@ -76,6 +88,12 @@ body{
                 li{
                     margin-left: 4rem;
                     text-transform:uppercase;
+                    a{
+                        transition: all 0.3s;
+                        &:hover{
+                            color:$acento-rojo;
+                        }
+                    }
                 }
             }
         }

@@ -40,7 +40,28 @@ footer{
                 height: 20vh;
             }
             .footer__contacto-btn{
-                @include btn1;
+                font-size: 1.4rem;
+                font-weight: bold;
+                cursor: pointer; 
+                font-family: 'Montserrat', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $secundario-naranja;
+                height: 4.3rem;
+                border-style: none;
+                border-radius: 0.5rem;
+                color:$primario-negro2;
+                width: 50%;
+                color: $primario-negro1;
+                font-size: 1.4rem;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+                transition: all 0.2s;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #fe8128;
+                }
             }
         }
     }

@@ -7,38 +7,52 @@
     font-size: 3.2rem;
 }
 @mixin btn1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $secundario-naranja;
-    width: 50%;
-    height: 4.3rem;
-    border-style: none;
-    border-radius: 0.5rem;
-    a{
-        color: $primario-negro1;
-        font-size: 1.4rem;
-        font-weight: bold;
-        font-family: 'Montserrat', sans-serif;
+        width: 48.5%;
+        margin-right: 3%;
+        .trabajos__proyecto__desc_btn1{
+            width: 100%;
+            color: $primario-negro1;
+            font-size: 1.4rem;
+            font-weight: bold;
+            cursor: pointer; 
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $secundario-naranja;
+            height: 4.3rem;
+            border-style: none;
+            border-radius: 0.5rem;
+            color:$primario-negro2;
+            transition: all 0.2s;
+            &:hover{
+                background-color: #fe8128;
+            }
     }
 }
 
 @mixin btn2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    width: 50%;
-    height: 4.3rem;
-    border-style:solid;
-    border-color: $secundario-naranja;
-    border-radius: 0.5rem;
-    a{
+    width: 48.5%;
+    .trabajos__proyecto__desc_btn2{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        height: 4.3rem;
+        border-style:solid;
+        border-color: $secundario-naranja;
+        border-radius: 0.5rem;
         color: $secundario-beige;
         font-size: 1.4rem;
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
-    }
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover{
+            background-color: #231c18;
+        } 
+}
 }
 
 @mixin proyecto{
@@ -75,11 +89,10 @@
         div{
             display: flex;
             flex-direction: row;
-            .trabajos__proyecto__desc_btn1{
+            a{
                 @include btn1;
-                margin-right: 2rem;
             }
-            .trabajos__proyecto__desc_btn2{
+            a{
                 @include btn2;
             }
         }

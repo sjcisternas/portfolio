@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../multimedia/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="../js/app.js" defer></script>
+    <script src="../js/cardsAnimation.js" defer></script>
+    <script src="../js/navbar.js" defer></script>
+    <link rel="stylesheet" href="../css/estilos.css"> 
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- TITULO -->
+    <title>Santiago Cisternas</title>
+</head>
+<body>
+    <header>
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="header__navbar" id="navbar">
+            <ul>
+                <li><a href="#portada" class="header__navbar-item" id="portadanav">Home</a></li>
+                <li><a href="#sobremi" class="header__navbar-item" id="sobreminav">About me</a></li>
+                <li><a href="#trabajos" class="header__navbar-item" id="trabajosnav">My work</a></li>
+                <li><a href="#contacto" class="header__navbar-item" id="contactonav">Contact me</a></li>
+            </ul>
+        </nav>
+        <!-- SELECIÓN DE IDIOMA -->
+        <nav class="header__idioma">
+            <ul>
+                <li><a href="../index.html">Es</a></li>
+                <li><a href="en.html"class="selected">En</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- PORTADA -->
+        <section class="portada seccion" id="portada">
+            <h1 class="portada__titulo">Santiago <b>Cisternas</b></h1>
+            <h2 class="portada__subtitulo">Web development & design</h2>
+            <img src="../multimedia/fondopuntos.png" alt="Fondo">
+        </section>
+        <!-- SOBRE MI -->
+        <section class="sobremi seccion" id="sobremi">
+            <article class="sobremi__parrafo">
+                <p>Hello! My name is <b>Santiago</b>. I'm an antrhopologist. My strong background in social science research (I was a researcher at the Applied Ethnography Laboratory of UNLP for 2 years) and my interest in exploring new possibilities led me to the world of UX. I gained expertise in this field through courses, which allowed me to carry out design projects <b>(ARTIX)</b> and research projects <b>(Uber)</b>.</p>
+                <p><i>"And how did you get into the development world?"</i> you might be wondering. Well, through scientific outreach on the Internet. In 2022 and 2023, I worked at <b>Argonautas del Atlántico Sur</b>, an outrech online project. Wefaced with the project's need for its own platform, I decided to take the lead and learned about front-end development. You can see the result <b>here</b>. Since I started learning front-end development until today, I have learned various technologies: <i>HTML5, CSS3, Sass, Bootstrap 5, JavaScript, React, Node.js</i> and <i>MongoDB</i>.</p>
+                <p>All this journey allows me to have, nowadays, a broad vision of the product journey, from initial planning to the final launch.</p>
+            </article>
+            <img src="../multimedia/perro.jpg" alt="Santiago Cisternas" class="sobremi__foto">
+        <!-- Habilidades -->
+            <!-- Lenguajes -->
+            <div class="habilidades__lenguajes">
+                <h3>Languages, frameworks y libraries</h3>
+                <div class="habilidades__imagenes">
+                    <img src="../multimedia/html5.svg" alt="HTML5">
+                    <img src="../multimedia/css3.svg" alt="CSS3">
+                    <img src="../multimedia/javascript.svg" alt="JavaScript">
+                    <img src="../multimedia/sass.svg" alt="SASS">
+                    <img src="../multimedia/bootstrap5.svg" alt="Bootstrap5">
+                    <img src="../multimedia/react.svg" alt="React">
+                    <img src="../multimedia/nodejs.svg" alt="Node.js">
+                </div>
+                <ul>
+                    <li><b>HTML5</b> - Project planning and broad knowledge of various tags: semantic, lists, forms, buttons, selection controls, tables, multimedia tags.</li>
+                    <li><b>CSS3</b> - Box modeling: flexbox & GRIDS, mediaqueries, pseudo-classes, basic animations, SEO. Proficient in SASS.</li>
+                    <li><b>JavaScript</b> - Functions and DOM manipulation. Fetch API. Object-Oriented Programming (OOP). React: NPM. Virtual DOM and JSX. Hooks, Axios, React Router, and Hooks context.</li>
+                </ul>
+            </div>
+            <!-- Herramientas -->
+            <div class="habilidades__herramientas">
+                <h3>Tools</h3>
+                <div class="habilidades__imagenes">
+                    <img src="../multimedia/gitlogo.svg" alt="Git">
+                    <img src="../multimedia/githubblanco.svg" alt="GitHub">
+                    <img src="../multimedia/figma.svg" alt="Figma">
+                    <img src="../multimedia/illustrator.svg" alt="Adobe Illustrator">
+                </div>
+                <ul>
+                    <li><b>Git</b> - Creation and management of local repositories and branches.</li>
+                    <li><b>GitHub</b> - Creation and management of remote repositories</li>
+                    <li><b>Figma</b> - My main tool for interface design and prototyping.</li>
+                    <li><b>Adobe Illustrator</b> - If necessary, I create custom images for my projects using this tool, such as logos or illustrations.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- MIS TRABAJOS -->
+        <!-- Slider main container -->
+        <section class="trabajos seccion" id="trabajos">
+        <div class="trabajos__titulo">
+            <h4>My work</h4>
+        </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <!-- ARGONAUTAS -->
+                    <article class="trabajos__proyecto" id="proyecto_argonautas">
+                        <img src="../multimedia/argonautasblack.svg" alt="Argonautas" class="trabajos__proyecto__portada">
+                        <h4>Argonautas</h4>
+                        <div class="trabajos__proyecto__herramientas">
+                            <img src="../multimedia/html5.svg" alt="HTML5">
+                            <img src="../multimedia/css3.svg" alt="CSS3">
+                            <img src="../multimedia/sass.svg" alt="SASS">
+                        </div>
+                        <div class="trabajos__proyecto__desc">
+                            <p>Are you interested in social and natural sciences? Argonautas del Atlántico Sur is a project dedicated to the outreach of these disciplines through its website, featuring blog posts, and Es Más Complejo podcast. The website is fully responsive.</p>
+                            <div>
+                                <a href="https://sjcisternas.github.io/argonautas/"><button class="trabajos__proyecto__desc_btn1">Visit web site</button></a>
+                                <a href="https://github.com/sjcisternas/argonautas"><button class="trabajos__proyecto__desc_btn2">GitHub Repository</button></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <!-- UBER -->
+                    <article class="trabajos__proyecto" id="proyecto_uber">
+                        <img src="../multimedia/uber.svg" alt="Uber" class="trabajos__proyecto__portada">
+                        <h4>Uber</h4>
+                        <div class="trabajos__proyecto__desc">
+                            <p>One of the main objectives of companies like Uber is to safeguard the safety of both providers and consumers. However, over the years, we have witnessed numerous acts of violence that raise concerns among users, especially if they are women. For this reason, I set out to investigate how safe Uber users feel and what factors affect that perception, in order to propose solutions tailored to their needs.</p>
+                            <div>
+                                <a href="https://www.behance.net/gallery/156365431/Uber-UX-Research"><button class="trabajos__proyecto__desc_btn1">Final report</button></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <!-- ARTIX -->
+                    <article class="trabajos__proyecto" id="proyecto_artix">
+                        <img src="../multimedia/artix.svg" alt="Argonautas" class="trabajos__proyecto__portada">
+                        <h4>Artix</h4>
+                        <div class="trabajos__proyecto__herramientas">
+                            <img src="../multimedia/figma.svg" alt="Figma">
+                            <img src="../multimedia/illustrator.svg" alt="Adobe Illustrator">
+                            <img src="../multimedia/designthinkingblanco.svg" alt="Design Thinking">
+                        </div>
+                        <div class="trabajos__proyecto__desc">
+                            <p>If you ever find yourself unaware of the events happening in your city, you've come to the right place. Artix is an app that allows you to discover, through geolocation, all the events near you, so you can make the most of your weekend.</p>
+                            <div>
+                                <a href="https://www.figma.com/proto/EeiZby4CFTHrKjE8AmiPoT/Cisternas?page-id=436%3A18523&type=design&node-id=472-24623&viewport=214%2C470%2C0.04&t=8ycBXJY7FvMGQbtG-1&scaling=min-zoom&starting-point-node-id=472%3A24623&mode=design"><button class="trabajos__proyecto__desc_btn1">Prototipe</button></a>
+                                <a href="https://www.behance.net/gallery/156363867/Artix-UXUI-Design"><button class="trabajos__proyecto__desc_btn2">UX report</button></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>  
+            <!-- If we need navigation buttons -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer__contacto seccion" id="contacto">
+            <h5 class="footer__contacto-titulo">Let's chat</h5>
+            <p class="footer__contacto-pregunta">Do you have any project or idea you'd like to share with me?</p>
+            <form class="footer__contacto-form">
+                <input type="text" name="nombre" placeholder="Nombre*" class="footer__contacto-input">
+                <input type="email" name="mail" placeholder="Email*" class="footer__contacto-input">
+                <input type="text" placeholder="Hello Santi, I'd like to..." class="footer__contacto-msg">Hello Santi, I'd like to...</textarea>
+                <input type="button" value="Enviar" class="footer__contacto-btn">
+            </form>
+        </div>
+        <div class="footer__redes">
+            <p class="footer__redes-pregunta">You can also reach me on my <b>social media!</b></p>
+            <div class="footer__redes-links">
+                <a href="https://github.com/sjcisternas"><img src="../multimedia/githubblanco.svg" alt="GitHub" class="footer__redes-iconos"></a>
+                <a href="https://www.linkedin.com/in/santiagojcisternas/"><img src="../multimedia/linkedinblanco.png" alt="LinkedIn" class="footer__redes-iconos"></a>
+                <a href="https://wa.me/5492804814103"><img src="../multimedia/whatsappblanco.png" alt="WhatsApp" class="footer__redes-iconos"></a>
+                <a href="https://www.behance.net/santiagocisternas"><img src="../multimedia/behanceblanco.png" alt="Behance" class="footer__redes-iconos"></a>
+            </div>
+            <img src="../multimedia/fondopuntos.png" alt="Fondo" class="footer__redes-fondo">
+        </div>
+    </footer>
+</body>
+</html>

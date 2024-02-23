@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="js/app.js" defer></script>
     <script src="js/cardsAnimation.js" defer></script>
+    <script src="js/navbar.js" defer></script>
     <link rel="stylesheet" href="css/estilos.css"> 
 
     <!-- GOOGLE FONTS -->
@@ -21,31 +22,31 @@
 <body>
     <header>
         <!-- MENÚ DE NAVEGACIÓN -->
-        <nav class="header__navbar">
+        <nav class="header__navbar" id="navbar">
             <ul>
-                <li><a href="" class="selected">Inicio</a></li>
-                <li><a href="#sobremi">Sobre mí</a></li>
-                <li><a href="">Mis trabajos</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#portada" class="header__navbar-item" id="portadanav">Inicio</a></li>
+                <li><a href="#sobremi" class="header__navbar-item" id="sobreminav">Sobre mí</a></li>
+                <li><a href="#trabajos" class="header__navbar-item" id="trabajosnav">Mis trabajos</a></li>
+                <li><a href="#contacto" class="header__navbar-item" id="contactonav">Contacto</a></li>
             </ul>
         </nav>
         <!-- SELECIÓN DE IDIOMA -->
         <nav class="header__idioma">
             <ul>
-                <li><a href="" class="selected">Es</a></li>
-                <li><a href="">En</a></li>
+                <li><a href="index.html" class="selected">Es</a></li>
+                <li><a href="paginas/en.html">En</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <!-- PORTADA -->
-        <section class="portada">
+        <section class="portada seccion" id="portada">
             <h1 class="portada__titulo">Santiago <b>Cisternas</b></h1>
             <h2 class="portada__subtitulo">Web development & design</h2>
             <img src="multimedia/fondopuntos.png" alt="Fondo">
         </section>
         <!-- SOBRE MI -->
-        <section class="sobremi" id="sobremi">
+        <section class="sobremi seccion" id="sobremi">
             <article class="sobremi__parrafo">
                 <p>¡Hola! Mi nombre es <b>Santiago</b>, Licenciado en Antropología. Mi fuerte background en investigación en ciencias sociales (fui investigador del Laboratorio de Etnografía Aplicada de la UNLP durante 2 años) y mí interés por explorar nuevas posibilidades me llevaron al mundo del UX. Me formé dentro de este campo a través de cursos, los cuales me permitieron llevar a cabo proyectos de diseño <b>(ARTIX)</b> y de research <b>(Uber)</b>.</p>
                 <p><i>“¿Y cómo llegaste al mundo del desarrollo?”</i> Te estarás preguntando. Bueno, a través de la divulgación científica en Internet. En el 2022 y 2023 participé haciendo divulgación en <b>Argonautas del Atlántico Sur</b>, y frente a la necesidad del proyecto de una plataforma propia, decidí tomar las riendas y aprendí sobre desarrollo front-end. El resultado lo podés ver <b>acá</b>. Desde que inicié mi aprendizaje en desarrollo front-end hasta hoy, aprendí diversas tecnologías: <i>HTML5, CSS3, Sass, Bootstrap 5, JavaScript, React, Node.js</i> y <i>MongoDB</i>.</p>
@@ -77,14 +78,12 @@
                 <div class="habilidades__imagenes">
                     <img src="multimedia/gitlogo.svg" alt="Git">
                     <img src="multimedia/githubblanco.svg" alt="GitHub">
-                    <img src="multimedia/VSC.svg" alt="Visual Studio Code">
                     <img src="multimedia/figma.svg" alt="Figma">
                     <img src="multimedia/illustrator.svg" alt="Adobe Illustrator">
                 </div>
                 <ul>
                     <li><b>Git</b> - Creación y manejo de repositorios locales y ramas.</li>
                     <li><b>GitHub</b> - Creación y manejo de repositorios remotos.</li>
-                    <li><b>Visual Studio Code</b> - Utilizo VSC como principal herramienta de edición y escritura de código.</li>
                     <li><b>Figma</b> - Esta es mi principal herramienta de diseño de interfaces y prototipado.</li>
                     <li><b>Adobe Illustrator</b> - De ser necesario, realizo imágenes personalizadas para mis proyectos con esta herramienta, como logos o ilustraciones.</li>
                 </ul>
@@ -92,7 +91,7 @@
         </section>
         <!-- MIS TRABAJOS -->
         <!-- Slider main container -->
-        <section class="trabajos">
+        <section class="trabajos seccion" id="trabajos">
         <div class="trabajos__titulo">
             <h4>Mis trabajos</h4>
         </div>
@@ -113,8 +112,8 @@
                         <div class="trabajos__proyecto__desc">
                             <p>¿Te interesan las ciencias sociales y las ciencias naturales? Argonautas del Atlántico Sur es un proyecto que se dedica a la divulgación de estas ciencias a través de su sitio web, con entradas de blog, y del podcast Es Más complejo. El sitio web es completamente responsive.</p>
                             <div>
-                                <button class="trabajos__proyecto__desc_btn1"><a href="">Visitar sitio</a></button>
-                                <button class="trabajos__proyecto__desc_btn2"><a href="">Ver en GitHub</a></button>
+                                <a href="https://sjcisternas.github.io/argonautas/"><button class="trabajos__proyecto__desc_btn1">Visitar sitio</button></a>
+                                <a href="https://github.com/sjcisternas/argonautas"><button class="trabajos__proyecto__desc_btn2">Ver en GitHub</button></a>
                             </div>
                         </div>
                     </article>
@@ -127,7 +126,7 @@
                         <div class="trabajos__proyecto__desc">
                             <p>Uno de los principales objetivos de empresas como Uber es resguardar la seguridad de los proveedores y de los consumidores. Sin embargo, a lo largo de los años hemos sido testigos de numerosos hechos de violencia que despiertan preocupación en los usuarios, sobre todo si son mujeres. Por este motivo, me propuse a indagar qué tan seguras se sienten las usuarias de Uber y cuáles son los factores que afectan a esa percepción, para poder proponer soluciones acordes a las necesidades.</p>
                             <div>
-                                <button class="trabajos__proyecto__desc_btn1"><a href="">Reporte final</a></button>
+                                <a href="https://www.behance.net/gallery/156365431/Uber-UX-Research"><button class="trabajos__proyecto__desc_btn1">Reporte final</button></a>
                             </div>
                         </div>
                     </article>
@@ -145,8 +144,8 @@
                         <div class="trabajos__proyecto__desc">
                             <p>Si nunca te enterás de los eventos que suceden en tu ciudad, llegaste al lugar indicado. Artix es una app que te permite encontrar, mediante geolocalización, todos los eventos cercanos a vos, para que puedas disfrutar tu fin de semana de la mejor manera.</p>
                             <div>
-                                <button class="trabajos__proyecto__desc_btn1"><a href="">Prototipo</a></button>
-                                <button class="trabajos__proyecto__desc_btn2"><a href="">Reporte UX</a></button>
+                                <a href="https://www.figma.com/proto/EeiZby4CFTHrKjE8AmiPoT/Cisternas?page-id=436%3A18523&type=design&node-id=472-24623&viewport=214%2C470%2C0.04&t=8ycBXJY7FvMGQbtG-1&scaling=min-zoom&starting-point-node-id=472%3A24623&mode=design"><button class="trabajos__proyecto__desc_btn1">Prototipo</button></a>
+                                <a href="https://www.behance.net/gallery/156363867/Artix-UXUI-Design"><button class="trabajos__proyecto__desc_btn2">Reporte UX</button></a>
                             </div>
                         </div>
                     </article>
@@ -160,7 +159,7 @@
     </section>
     </main>
     <footer>
-        <div class="footer__contacto">
+        <div class="footer__contacto seccion" id="contacto">
             <h5 class="footer__contacto-titulo">Charlemos</h5>
             <p class="footer__contacto-pregunta">¿Tenés algún proyecto o propuesta que quieras compartirme?</p>
             <form class="footer__contacto-form">
@@ -173,11 +172,10 @@
         <div class="footer__redes">
             <p class="footer__redes-pregunta">¡También podés escribirme a mis <b>redes!</b></p>
             <div class="footer__redes-links">
-                <a href=""><img src="multimedia/githubblanco.svg" alt="GitHub" class="footer__redes-iconos"></a>
-                <a href=""><img src="multimedia/linkedinblanco.png" alt="LinkedIn" class="footer__redes-iconos"></a>
-                <a href=""><img src="multimedia/whatsappblanco.png" alt="WhatsApp" class="footer__redes-iconos"></a>
-                <a href=""><img src="multimedia/gmailblanco.png" alt="Gmail" class="footer__redes-iconos"></a>
-                <a href=""><img src="multimedia/behanceblanco.png" alt="Behance" class="footer__redes-iconos"></a>
+                <a href="https://github.com/sjcisternas"><img src="multimedia/githubblanco.svg" alt="GitHub" class="footer__redes-iconos"></a>
+                <a href="https://www.linkedin.com/in/santiagojcisternas/"><img src="multimedia/linkedinblanco.png" alt="LinkedIn" class="footer__redes-iconos"></a>
+                <a href="https://wa.me/5492804814103"><img src="multimedia/whatsappblanco.png" alt="WhatsApp" class="footer__redes-iconos"></a>
+                <a href="https://www.behance.net/santiagocisternas"><img src="multimedia/behanceblanco.png" alt="Behance" class="footer__redes-iconos"></a>
             </div>
             <img src="multimedia/fondopuntos.png" alt="Fondo" class="footer__redes-fondo">
         </div>
