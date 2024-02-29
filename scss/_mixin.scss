@@ -98,3 +98,21 @@
         }
     }
 }
+
+@mixin error {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+    p{
+        color:rgb(250, 63, 63);
+    }
+}
+
+@mixin success{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+    p{
+        color:#5fcc2c;
+    }
+}

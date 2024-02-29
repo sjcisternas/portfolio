@@ -36,6 +36,9 @@ footer{
                     font-size: 1.6rem;
                 }
             }
+            .footer__contacto-error{
+                @include error;
+            }
             .footer__contacto-msg{
                 padding: 1.6rem 1rem;
                 font-family: 'Montserrat', sans-serif;
@@ -45,6 +48,9 @@ footer{
                 &:focus-visible{
                     outline: 0px;
                 }
+            }
+            .footer__contacto-msg-enviado{
+                @include success;
             }
             .footer__contacto-btn{
                 font-size: 1.4rem;
@@ -89,8 +95,8 @@ footer{
             position: relative;
             width: fit-content;
             height: fit-content;
-            bottom: 15rem;
-            left: 25rem;
+            bottom: 35%;
+            left: 38%;
             z-index: 1;
         }
         .footer__redes-links{
@@ -111,5 +117,79 @@ footer{
             }
             
         } 
+    }
+}
+
+/* MEDIA QUERIES */
+
+//1301px
+
+@media (max-width:1301px){
+    body{
+        footer{
+            .footer__contacto{
+                .footer__contacto-titulo{
+                    font-size: 2.8rem;
+                }
+                .footer__contacto-pregunta{
+                    font-size: 2rem;
+                }
+                .footer__contacto-form{
+                    .footer__contacto-input{
+                        &::placeholder{
+                            font-size: 1.3rem;
+                        }
+                    }
+                    .footer__contacto-msg{
+                        &::placeholder{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+            .footer__redes{
+                padding-top:7.5rem;
+                .footer__redes-fondo{
+                    position: relative;
+                    width: fit-content;
+                    height: fit-content;
+                    bottom: 40%;
+                    left: 38%;
+                    z-index: 1;
+                }
+                .footer__redes-pregunta{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+//1024px
+
+@media (max-width:1024px){
+    body{
+        footer{
+            .footer__contacto{
+                .footer__contacto-titulo{
+                    font-size: 2.4rem;
+                }
+                .footer__contacto-pregunta{
+                    font-size: 1.8rem;
+                }
+            }
+            .footer__redes{
+                padding-top: 7rem;
+                .footer__redes-fondo{
+                    width: 30rem;
+                    bottom: 40%;
+                    left: 35%;
+                }
+                .footer__redes-pregunta{
+                    font-size: 1.8rem;
+                }
+            }
+        }
     }
 }

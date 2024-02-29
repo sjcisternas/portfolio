@@ -8,6 +8,17 @@
   opacity: 1;
 }
 
+.errorForm {
+  border-bottom: solid 2px rgb(250, 63, 63);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.d-none {
+  display: none;
+}
+
 /* Config gral */
 * {
   margin: 0;
@@ -142,6 +153,34 @@ body main .portada img {
   z-index: 1;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 1301px) {
+  body header .header__navbar ul {
+    font-size: 2rem;
+  }
+  body header .header__idioma ul {
+    font-size: 2rem;
+  }
+  body main {
+    padding-top: 21.3rem;
+    /* Desde acá portada */
+  }
+  body main .portada .portada__titulo {
+    font-size: 10rem;
+  }
+  body main .portada .portada__subtitulo {
+    font-size: 1.8rem;
+    padding-left: 1rem;
+  }
+  body main .portada img {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    bottom: 13.4rem;
+    right: 3rem;
+    z-index: 1;
+  }
+}
 .sobremi {
   padding: 10rem 14rem 0 14rem;
   display: grid;
@@ -201,6 +240,20 @@ body main .portada img {
   grid-area: herramientas;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 1301px) {
+  body main .sobremi {
+    row-gap: 12rem;
+    padding: 5rem 14rem 0 14rem;
+  }
+  body main .sobremi .sobremi__parrafo p {
+    font-size: 1.4rem;
+  }
+  body main .sobremi .habilidades__lenguajes ul li, body main .sobremi .habilidades__herramientas ul li {
+    font-size: 1.4rem;
+    margin-bottom: 2.6rem;
+  }
+}
 .trabajos {
   margin-top: 15rem;
   margin-bottom: 15rem;
@@ -317,7 +370,7 @@ body main .portada img {
 }
 .trabajos .swiper .swiper-button-prev {
   color: #FD6A00;
-  top: 20%;
+  top: 16%;
   left: 35%;
   opacity: 0.7;
   transition: all 0.2s;
@@ -330,7 +383,7 @@ body main .portada img {
 }
 .trabajos .swiper .swiper-button-next {
   color: #FD6A00;
-  top: 20%;
+  top: 16%;
   right: 35%;
   opacity: 0.7;
   transition: all 0.2s;
@@ -342,6 +395,61 @@ body main .portada img {
   color: #F6270B;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 1456px) {
+  .trabajos .swiper .swiper-button-prev {
+    left: 33%;
+  }
+  .trabajos .swiper .swiper-button-next {
+    right: 33%;
+  }
+}
+@media (max-width: 1301px) {
+  .trabajos .swiper .swiper-button-prev {
+    left: 32%;
+  }
+  .trabajos .swiper .swiper-button-next {
+    right: 32%;
+  }
+}
+@media (max-width: 1250px) {
+  .trabajos .swiper .swiper-button-prev {
+    left: 31%;
+  }
+  .trabajos .swiper .swiper-button-next {
+    right: 31%;
+  }
+}
+@media (max-width: 1150px) {
+  .trabajos .trabajos__titulo {
+    color: #FD6A00;
+    text-transform: uppercase;
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    font-size: 3.2rem;
+    margin-bottom: 6rem;
+    font-size: 2.6rem;
+  }
+  .trabajos .swiper .swiper-slide .trabajos__proyecto h4 {
+    font-size: 1.6rem;
+  }
+  .trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc p {
+    font-size: 1.2rem;
+  }
+  .trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc div a .trabajos__proyecto__desc_btn1 {
+    font-size: 1.2rem;
+  }
+  .trabajos .swiper .swiper-slide .trabajos__proyecto .trabajos__proyecto__desc div a .trabajos__proyecto__desc_btn2 {
+    font-size: 1.2rem;
+  }
+  .trabajos .swiper .swiper-button-prev {
+    left: 30%;
+  }
+  .trabajos .swiper .swiper-button-next {
+    right: 30%;
+  }
+}
 footer {
   display: grid;
   grid-template-columns: 47% 47%;
@@ -387,6 +495,14 @@ footer .footer__contacto .footer__contacto-form .footer__contacto-input::placeho
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
 }
+footer .footer__contacto .footer__contacto-form .footer__contacto-error {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+footer .footer__contacto .footer__contacto-form .footer__contacto-error p {
+  color: rgb(250, 63, 63);
+}
 footer .footer__contacto .footer__contacto-form .footer__contacto-msg {
   padding: 1.6rem 1rem;
   font-family: "Montserrat", sans-serif;
@@ -396,6 +512,14 @@ footer .footer__contacto .footer__contacto-form .footer__contacto-msg {
 }
 footer .footer__contacto .footer__contacto-form .footer__contacto-msg:focus-visible {
   outline: 0px;
+}
+footer .footer__contacto .footer__contacto-form .footer__contacto-msg-enviado {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+footer .footer__contacto .footer__contacto-form .footer__contacto-msg-enviado p {
+  color: #5fcc2c;
 }
 footer .footer__contacto .footer__contacto-form .footer__contacto-btn {
   font-size: 1.4rem;
@@ -439,8 +563,8 @@ footer .footer__redes .footer__redes-fondo {
   position: relative;
   width: fit-content;
   height: fit-content;
-  bottom: 15rem;
-  left: 25rem;
+  bottom: 35%;
+  left: 38%;
   z-index: 1;
 }
 footer .footer__redes .footer__redes-links {
@@ -459,6 +583,55 @@ footer .footer__redes .footer__redes-links a .footer__redes-iconos {
 }
 footer .footer__redes .footer__redes-links a .footer__redes-iconos:hover {
   opacity: 1;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1301px) {
+  body footer .footer__contacto .footer__contacto-titulo {
+    font-size: 2.8rem;
+  }
+  body footer .footer__contacto .footer__contacto-pregunta {
+    font-size: 2rem;
+  }
+  body footer .footer__contacto .footer__contacto-form .footer__contacto-input::placeholder {
+    font-size: 1.3rem;
+  }
+  body footer .footer__contacto .footer__contacto-form .footer__contacto-msg::placeholder {
+    font-size: 1.3rem;
+  }
+  body footer .footer__redes {
+    padding-top: 7.5rem;
+  }
+  body footer .footer__redes .footer__redes-fondo {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    bottom: 40%;
+    left: 38%;
+    z-index: 1;
+  }
+  body footer .footer__redes .footer__redes-pregunta {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1024px) {
+  body footer .footer__contacto .footer__contacto-titulo {
+    font-size: 2.4rem;
+  }
+  body footer .footer__contacto .footer__contacto-pregunta {
+    font-size: 1.8rem;
+  }
+  body footer .footer__redes {
+    padding-top: 7rem;
+  }
+  body footer .footer__redes .footer__redes-fondo {
+    width: 30rem;
+    bottom: 40%;
+    left: 35%;
+  }
+  body footer .footer__redes .footer__redes-pregunta {
+    font-size: 1.8rem;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

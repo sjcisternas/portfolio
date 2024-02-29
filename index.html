@@ -10,6 +10,7 @@
     <script src="js/app.js" defer></script>
     <script src="js/cardsAnimation.js" defer></script>
     <script src="js/navbar.js" defer></script>
+    <script src="js/formValidation.js" defer></script>
     <link rel="stylesheet" href="css/estilos.css"> 
 
     <!-- GOOGLE FONTS -->
@@ -156,17 +157,26 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-    </section>
+        </section>
     </main>
     <footer>
         <div class="footer__contacto seccion" id="contacto">
             <h5 class="footer__contacto-titulo">Charlemos</h5>
             <p class="footer__contacto-pregunta">¿Tenés algún proyecto o propuesta que quieras compartirme?</p>
-            <form class="footer__contacto-form">
-                <input type="text" name="nombre" placeholder="Nombre*" class="footer__contacto-input">
-                <input type="email" name="mail" placeholder="Email*" class="footer__contacto-input">
-                <textarea placeholder="Hola Santi, me gustaría contarte mi idea sobre..." class="footer__contacto-msg"></textarea>
-                <input type="button" value="Enviar" class="footer__contacto-btn">
+            <form class="footer__contacto-form" id="form-contacto">
+                <input type="text" name="nombre" placeholder="Nombre*" class="footer__contacto-input" id="form-nombre">
+                <div class="footer__contacto-error d-none" id="nombre-error">
+                    <p>No se admiten caracteres especiales. Longitud 3-20 caracteres. Intentalo nuevamente.</p>
+                </div>
+                <input name="mail" placeholder="Email*" class="footer__contacto-input" id="form-mail">
+                <div class="footer__contacto-error d-none" id="mail-error">
+                    <p>El email no es válido. Intentalo nuevamente. No se aceptan espacios al inicio o al final.</p>
+                </div>
+                <textarea placeholder="Hola Santi, me gustaría contarte mi idea sobre..." class="footer__contacto-msg" id="form-msg"></textarea>
+                <div class="footer__contacto-msg-enviado d-none" id="form-exito">
+                    <p>Tu mensaje fue enviado. ¡En breve me pondré en contacto!</p>
+                </div>
+                <input type="submit" value="Enviar" class="footer__contacto-btn">
             </form>
         </div>
         <div class="footer__redes">

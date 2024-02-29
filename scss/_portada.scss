@@ -137,3 +137,45 @@ body{
     }
 }
 
+
+/* MEDIA QUERIES */
+
+//1301px
+
+@media (max-width:1301px){
+    body{
+        header{
+            .header__navbar{
+                ul{
+                    font-size: 2rem;
+                    }
+                }
+            .header__idioma{
+                ul{
+                    font-size: 2rem;
+                }
+            }
+        }
+        main{
+            padding-top: 21.3rem;
+            /* Desde acá portada */
+            .portada{
+                .portada__titulo{
+                    font-size: 10rem;
+                }
+                .portada__subtitulo{
+                    font-size: 1.8rem;
+                    padding-left:1rem;
+                }
+                img{
+                    position: relative;
+                    width: fit-content;
+                    height: fit-content;
+                    bottom: 13.4rem;
+                    right: 3rem;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
