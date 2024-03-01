@@ -66,7 +66,7 @@
         main{
             .sobremi{
                 row-gap: 12rem;
-                padding: 5rem 14rem 0 14rem;
+                padding: 5rem 12rem 0 12rem;
                 .sobremi__parrafo{
                     p{
                         font-size: 1.4rem;
@@ -78,6 +78,21 @@
                             font-size: 1.4rem;
                             margin-bottom: 2.6rem;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 906px){
+    body{
+        main{
+            .sobremi{
+                padding: 5rem 8rem 0 8rem;
+                .sobremi__parrafo{
+                    p{
+                        font-size: 1.4rem;
                     }
                 }
             }

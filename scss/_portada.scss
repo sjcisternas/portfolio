@@ -146,13 +146,15 @@ body{
     body{
         header{
             .header__navbar{
+                padding-left: 12rem;
                 ul{
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     }
                 }
             .header__idioma{
+                padding-right: 12rem;
                 ul{
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                 }
             }
         }
@@ -160,6 +162,7 @@ body{
             padding-top: 21.3rem;
             /* Desde acá portada */
             .portada{
+                padding: 0 12rem 0 12rem;
                 .portada__titulo{
                     font-size: 10rem;
                 }
@@ -177,5 +180,38 @@ body{
                 }
             }
         }
+    }
+}
+
+//906px
+
+@media (max-width: 906px){
+    body{
+        header{
+            .header__navbar{
+                padding-left: 8rem;
+                ul{
+                    font-size: 1.6rem;
+                    li{
+                        margin-right: 3rem;
+                    }
+                }
+            }
+            .header__idioma{
+                padding-right: 8rem;
+                ul{
+                    font-size: 1.6rem;
+                    li{
+                        margin-left: 3rem;
+                    }
+                }
+            }
+        }
+        main{
+            .portada{
+                width:auto;
+                padding: 0 8rem 0 8rem;
+            }
+        }    
     }
 }

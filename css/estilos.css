@@ -155,15 +155,24 @@ body main .portada img {
 
 /* MEDIA QUERIES */
 @media (max-width: 1301px) {
+  body header .header__navbar {
+    padding-left: 12rem;
+  }
   body header .header__navbar ul {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  body header .header__idioma {
+    padding-right: 12rem;
   }
   body header .header__idioma ul {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   body main {
     padding-top: 21.3rem;
     /* Desde acá portada */
+  }
+  body main .portada {
+    padding: 0 12rem 0 12rem;
   }
   body main .portada .portada__titulo {
     font-size: 10rem;
@@ -179,6 +188,30 @@ body main .portada img {
     bottom: 13.4rem;
     right: 3rem;
     z-index: 1;
+  }
+}
+@media (max-width: 906px) {
+  body header .header__navbar {
+    padding-left: 8rem;
+  }
+  body header .header__navbar ul {
+    font-size: 1.6rem;
+  }
+  body header .header__navbar ul li {
+    margin-right: 3rem;
+  }
+  body header .header__idioma {
+    padding-right: 8rem;
+  }
+  body header .header__idioma ul {
+    font-size: 1.6rem;
+  }
+  body header .header__idioma ul li {
+    margin-left: 3rem;
+  }
+  body main .portada {
+    width: auto;
+    padding: 0 8rem 0 8rem;
   }
 }
 .sobremi {
@@ -244,7 +277,7 @@ body main .portada img {
 @media (max-width: 1301px) {
   body main .sobremi {
     row-gap: 12rem;
-    padding: 5rem 14rem 0 14rem;
+    padding: 5rem 12rem 0 12rem;
   }
   body main .sobremi .sobremi__parrafo p {
     font-size: 1.4rem;
@@ -252,6 +285,14 @@ body main .portada img {
   body main .sobremi .habilidades__lenguajes ul li, body main .sobremi .habilidades__herramientas ul li {
     font-size: 1.4rem;
     margin-bottom: 2.6rem;
+  }
+}
+@media (max-width: 906px) {
+  body main .sobremi {
+    padding: 5rem 8rem 0 8rem;
+  }
+  body main .sobremi .sobremi__parrafo p {
+    font-size: 1.4rem;
   }
 }
 .trabajos {
@@ -450,6 +491,11 @@ body main .portada img {
     right: 30%;
   }
 }
+@media (max-width: 906px) {
+  .trabajos {
+    display: none;
+  }
+}
 footer {
   display: grid;
   grid-template-columns: 47% 47%;
@@ -631,6 +677,32 @@ footer .footer__redes .footer__redes-links a .footer__redes-iconos:hover {
   }
   body footer .footer__redes .footer__redes-pregunta {
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 950px) {
+  body footer .footer__contacto .footer__contacto-titulo {
+    font-size: 2.2rem;
+  }
+  body footer .footer__contacto .footer__contacto-pregunta {
+    font-size: 1.6rem;
+  }
+  body footer .footer__redes .footer__redes-pregunta {
+    font-size: 1.6rem;
+  }
+  body footer .footer__redes .footer__redes-links a {
+    margin-right: 3rem;
+  }
+  body footer .footer__redes .footer__redes-links a .footer__redes-iconos {
+    width: 3.8rem;
+    height: 4.1rem;
+  }
+}
+@media (max-width: 906px) {
+  body footer .footer__redes .footer__redes-fondo {
+    display: none;
+    width: 25rem;
+    bottom: 40%;
+    left: 25%;
   }
 }
 
