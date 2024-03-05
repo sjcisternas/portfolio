@@ -2,18 +2,27 @@
     padding: 10rem 14rem 0 14rem;
     display: grid;
     grid-template-columns: 47% 47%;
-    grid-template-rows: fit-content fit-content fit-content;
+    grid-template-rows: fit-content fit-content;
     column-gap: 6%;
     row-gap: 15rem;
     grid-template-areas:
-    "sobremi foto" 
+    "sobremi sobremi" 
     "lenguajes herramientas";
     .sobremi__titulo{
         @include titulo__seccion;
+        justify-content: start;
     }
     .sobremi__parrafo{
         grid-area:sobremi;
         display: inline-block;
+        .sobremi__foto{
+            max-width: 45%;
+            display: inline;
+            float: right;
+            margin-left: 3rem;
+            margin-bottom: 3rem;
+            border-radius: 5px;
+        }
         p{
             font-size: 1.6rem;
             padding-bottom: 3.2rem;
@@ -21,11 +30,6 @@
                 color: $secundario-naranja;
             }
         }
-    }
-    .sobremi__foto{
-        grid-area: foto;
-        width: 100%;
-        display: inline;
     }
     .habilidades__lenguajes{
         grid-area: lenguajes;
@@ -85,15 +89,107 @@
     }
 }
 
-@media (max-width: 906px){
+//924px
+
+@media (max-width: 924px){
     body{
         main{
             .sobremi{
                 padding: 5rem 8rem 0 8rem;
+            }
+        }
+    }
+}
+
+
+//800px
+
+@media(max-width: 800px){
+    body{
+        main{
+            .sobremi{
+                display: flex;
+                flex-direction: column;
+                row-gap: 0;
                 .sobremi__parrafo{
+                    margin-bottom: 8rem;
                     p{
                         font-size: 1.4rem;
                     }
+                }
+                .habilidades__lenguajes{
+                    margin-bottom:8rem;
+                    ul{
+                        li{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+                .habilidades__herramientas{
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+    }
+}
+
+//764
+
+@media (max-width:767px){
+    body{
+        main{
+            .sobremi{
+                padding: 0 6rem 0 6rem;
+                .sobremi__parrafo{
+                    .sobremi__foto{
+                        float:none;
+                        margin-left: 0;
+                        margin-bottom: 2rem;
+                        max-width: 100%;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                        padding-bottom: 1.6rem;
+                    }
+                }
+                .habilidades__lenguajes{
+                    h3{
+                        font-size: 2rem;
+                    }
+                    ul{
+                        li{
+                            font-size: 1.2rem;
+                            margin-bottom: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//425px
+
+
+
+@media (max-width:425px){
+    body{
+        main{
+            .sobremi{
+                padding: 0 4rem 0 4rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px){
+    body{
+        main{
+            .sobremi{
+                .habilidades__lenguajes{
+                    h3{
+                        font-size: 1.8rem;
+                        }
                 }
             }
         }

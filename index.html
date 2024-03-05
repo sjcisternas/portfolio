@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="multimedia/logo.png" type="image/x-icon">
+    
+    <!-- SWIPER JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    
+    <!-- JS Y CSS -->
     <script src="js/app.js" defer type="module"></script>
     <!-- <script src="js/cardsAnimation.js" defer></script> -->
     <script src="js/navbar.js" defer class="script_navbar"></script>
@@ -24,6 +28,7 @@
     <header>
         <!-- MENÚ DE NAVEGACIÓN -->
         <nav class="header__navbar" id="navbar">
+            <button class="header__btn-cerrar" id="cerrar"><img src="multimedia/x.svg" id="cerrar-img"></button>
             <ul>
                 <li><a href="#portada" class="header__navbar-item" id="portadanav">Inicio</a></li>
                 <li><a href="#sobremi" class="header__navbar-item" id="sobreminav">Sobre mí</a></li>
@@ -32,12 +37,14 @@
             </ul>
         </nav>
         <!-- SELECIÓN DE IDIOMA -->
-        <nav class="header__idioma">
+        <nav class="header__idioma translate" id="navbar-idioma">
             <ul>
                 <li><a href="index.html" class="selected">Es</a></li>
                 <li><a href="paginas/en.html">En</a></li>
             </ul>
         </nav>
+        <img src="/multimedia/logo.png" alt="Santiago Cisternas" class="header__logo" id="logo">
+        <button class="header__btn-abrir" id="abrir"><img src="multimedia/menu.svg" id="abrir-img"></button>
     </header>
     <main>
         <!-- PORTADA -->
@@ -49,11 +56,12 @@
         <!-- SOBRE MI -->
         <section class="sobremi seccion" id="sobremi">
             <article class="sobremi__parrafo">
-                <p>¡Hola! Mi nombre es <b>Santiago</b>, Licenciado en Antropología. Mi fuerte background en investigación en ciencias sociales (fui investigador del Laboratorio de Etnografía Aplicada de la UNLP durante 2 años) y mí interés por explorar nuevas posibilidades me llevaron al mundo del UX. Me formé dentro de este campo a través de cursos, los cuales me permitieron llevar a cabo proyectos de diseño <b>(ARTIX)</b> y de research <b>(Uber)</b>.</p>
-                <p><i>“¿Y cómo llegaste al mundo del desarrollo?”</i> Te estarás preguntando. Bueno, a través de la divulgación científica en Internet. En el 2022 y 2023 participé haciendo divulgación en <b>Argonautas del Atlántico Sur</b>, y frente a la necesidad del proyecto de una plataforma propia, decidí tomar las riendas y aprendí sobre desarrollo front-end. El resultado lo podés ver <b>acá</b>. Desde que inicié mi aprendizaje en desarrollo front-end hasta hoy, aprendí diversas tecnologías: <i>HTML5, CSS3, Sass, Bootstrap 5, JavaScript, React, Node.js</i> y <i>MongoDB</i>.</p>
-                <p>Todo este camino me permite tener, hoy en día, una visión integral del product journey, desde la planificación incial, hasta el lanzamiento final del mismo.</p>
+                <h2 class="sobremi__titulo">Sobre mi</h2>
+                <img src="multimedia/perro.jpg" alt="Santiago Cisternas" class="sobremi__foto">
+                <p class="sobremi__parrafo-1">¡Hola! Mi nombre es <b>Santiago</b>, Licenciado en Antropología. Mi fuerte background en investigación en ciencias sociales (fui investigador del Laboratorio de Etnografía Aplicada de la UNLP durante 2 años) y mí interés por explorar nuevas posibilidades me llevaron al mundo del UX. Me formé dentro de este campo a través de cursos, los cuales me permitieron llevar a cabo proyectos de diseño <b>(ARTIX)</b> y de research <b>(Uber)</b>.</p>
+                <p class="sobremi__parrafo-2"><i>“¿Y cómo llegaste al mundo del desarrollo?”</i> Te estarás preguntando. Bueno, a través de la divulgación científica en Internet. En el 2022 y 2023 participé haciendo divulgación en <b>Argonautas del Atlántico Sur</b>, y frente a la necesidad del proyecto de una plataforma propia, decidí tomar las riendas y aprendí sobre desarrollo front-end. El resultado lo podés ver <b>acá</b>.</p>
+                <p class="sobremi__parrafo-3">Desde que inicié mi aprendizaje en desarrollo front-end hasta hoy, aprendí diversas tecnologías: <i>HTML5, CSS3, Sass, Bootstrap 5, JavaScript, React, Node.js</i> y <i>MongoDB</i>. Todo este camino me permite tener, hoy en día, una visión integral del product journey, desde la planificación incial, hasta el lanzamiento final del mismo.</p>
             </article>
-            <img src="multimedia/perro.jpg" alt="Santiago Cisternas" class="sobremi__foto">
         <!-- Habilidades -->
             <!-- Lenguajes -->
             <div class="habilidades__lenguajes">

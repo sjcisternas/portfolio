@@ -11,7 +11,6 @@
   
 html {
     font-size: 62.5%;
-    background-color: #181310;
     font-family: 'Montserrat', sans-serif;
     a{
         text-decoration:none;
@@ -47,6 +46,7 @@ section[id]{
 }
 
 body{
+    background-color: #181310;
     header{
         display: flex;
         flex-direction: row;
@@ -69,6 +69,7 @@ body{
                     margin-right: 4rem;
                     text-transform: uppercase;
                     font-weight: 500;
+                    width: max-content;
                     a{
                         transition: all 0.3s;
                         &:hover{
@@ -88,6 +89,7 @@ body{
                 li{
                     margin-left: 4rem;
                     text-transform:uppercase;
+                    width: max-content;
                     a{
                         transition: all 0.3s;
                         &:hover{
@@ -96,6 +98,14 @@ body{
                     }
                 }
             }
+        }
+        .header__logo{
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s all;
+        }
+        .header__btn-abrir, .header__btn-cerrar{
+            display:none;
         }
     }
     main{
@@ -183,9 +193,9 @@ body{
     }
 }
 
-//906px
+//924px
 
-@media (max-width: 906px){
+@media (max-width: 924px){
     body{
         header{
             .header__navbar{
@@ -211,7 +221,173 @@ body{
             .portada{
                 width:auto;
                 padding: 0 8rem 0 8rem;
+                .portada__titulo{
+                    font-size: 8rem;
+                }
+                .portada__subtitulo{
+                    font-size: 1.5rem;
+                    padding-left:1rem;
+                }
+                img{
+                    bottom: 13.4rem;
+                    right: 3rem;
+                }
             }
         }    
+    }
+}
+
+@media (max-width: 724px){
+    body{
+        header{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas:
+            'logo btn';
+            .header__logo{
+                grid-area: logo;
+                width: 20%;
+                margin-left: 3rem;
+                transition: all 0.2s;
+            }
+            .header__btn-abrir{
+                grid-area: btn;
+                display: block;
+                justify-self: flex-end;
+                margin-right: 3rem;
+                background-color: $primario-marron;
+                border: none;
+                cursor: pointer;
+                img{
+                    width: 3rem;
+                    cursor: pointer;
+                }
+            }
+            .header__navbar{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                top: 0;
+                right: 0;
+                height: 50vh;
+                width: 15rem;
+                min-width: 25%;
+                background-color: $primario-marron;
+                padding: 3rem 2rem 0 2rem;
+                background-color: $primario-negro2;
+                box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .50);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.2s;
+                button{
+                    margin-bottom: 3rem;
+                    align-self: end;
+                    display:block;
+                    background-color: $primario-negro2;
+                    border: none;
+                    cursor: pointer;
+                    img{
+                        width: 3rem;
+                        cursor: pointer;
+                    }
+                }
+                ul{
+                    flex-direction: column;
+                    gap:2rem;
+                }
+            }
+            .header__idioma{
+                position: absolute;
+                top:50vh;
+                right: 0;
+                height: 45vh;
+                width: 15rem;
+                min-width: 25%;
+                background-color: $primario-marron;
+                padding: 0 2rem 5rem 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                background-color: $primario-negro2;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.2s;
+                ul{
+                    gap: 2rem;
+                    li{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        main{
+            padding-top: 16rem;
+            .portada{
+                padding: 3rem 6rem 0 6rem;
+                margin-bottom: 15rem;
+                .portada__titulo{
+                    font-size: 6rem;
+                }
+                .portada__subtitulo{
+                    font-size: 1.5rem;
+                    padding-left:1rem;
+                }
+                img{
+                    width: 50vw;
+                    bottom: 10rem;
+                    right: 2rem;
+                }
+            }
+        }
+    }
+}
+
+//425px
+
+@media (max-width:425px){
+    body{
+        header{
+            .header__navbar{
+                ul{
+                    font-size: 1.4rem;
+                }       
+            }
+            .header__idioma{
+                ul{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        main{
+            .portada{
+                padding: 0 4rem 0 4rem;
+                margin-bottom: 20rem;
+                img{
+                    width: 50vw;
+                    bottom: 10rem;
+                    right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+//375px
+
+@media (max-width:375px){
+    body{
+        main{
+            .portada{
+                margin-bottom: 22rem;
+                .portada__titulo{
+                    font-size: 5rem;
+                }
+                .portada__subtitulo{
+                    font-size: 1.2rem;
+                    padding-left:1rem;
+                }
+            }
+        }
     }
 }

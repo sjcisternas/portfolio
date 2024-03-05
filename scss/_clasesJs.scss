@@ -6,6 +6,12 @@
     opacity: 1;
 }
 
+.nav-visible{
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: all 0.2s;
+}
+
 .errorForm{
     border-bottom: solid 2px rgb(250, 63, 63);
     border-top: none;
@@ -14,5 +20,10 @@
 }
 
 .d-none{
-    display: none;
+    display: none !important;
+    transition: all 0.2s;
+}
+
+.translate{
+    transform: translate(100%);
 }

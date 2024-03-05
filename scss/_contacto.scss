@@ -126,6 +126,7 @@ footer{
 @media (max-width:1301px){
     body{
         footer{
+            padding: 6rem 12rem;
             .footer__contacto{
                 .footer__contacto-titulo{
                     font-size: 2.8rem;
@@ -138,6 +139,11 @@ footer{
                         &::placeholder{
                             font-size: 1.3rem;
                         }
+                    }
+                    .footer__contacto-error{
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        margin-bottom: 2.4rem;
                     }
                     .footer__contacto-msg{
                         &::placeholder{
@@ -205,6 +211,18 @@ footer{
                 .footer__contacto-pregunta{
                     font-size: 1.6rem;
                 }
+                .footer__contacto-form{
+                    .footer__contacto-input{
+                        &::placeholder{
+                            font-size: 1.2rem;
+                        }
+                    }
+                    .footer__contacto-msg{
+                        &::placeholder{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
             }
             .footer__redes{
                 .footer__redes-pregunta{
@@ -224,17 +242,65 @@ footer{
     }
 }
 
+@media (max-width: 924px){
+    body{
+        footer{
+            padding: 6rem 8rem;
+        }
+    }
+}
+
 @media (max-width:906px){
     body{
         footer{
             .footer__redes{
                 .footer__redes-fondo{
                     display: none;
-                    width: 25rem;
-                    bottom: 40%;
-                    left: 25%;
                 }
             }
+        }
+    }
+}
+
+//767px
+
+@media (max-width: 767px){
+    body{
+        footer{
+            display: flex;
+            flex-direction: column;
+            padding: 6rem;
+            .footer__contacto{
+                .footer__contacto-titulo{
+                    font-size: 2rem;
+                }
+                .footer__contacto-pregunta{
+                    font-size: 1.4rem;
+                }
+            }
+            .footer__redes{
+                .footer__redes-pregunta{
+                    font-size: 1.4rem;
+                    margin-bottom:3rem;
+                }
+                .footer__redes-links{
+                    a{
+                        margin-right: 2.5rem;
+                        .footer__redes-iconos{
+                            width: 3.2rem;
+                            height: 3.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    body{
+        footer{
+            padding: 6rem 4rem 6rem 4rem;
         }
     }
 }
