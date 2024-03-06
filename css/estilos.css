@@ -346,7 +346,7 @@ body main .portada img {
     right: 2rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   body header .header__navbar ul {
     font-size: 1.4rem;
   }
@@ -355,6 +355,9 @@ body main .portada img {
   }
   body main .portada {
     padding: 0 4rem 0 4rem;
+  }
+  body main .portada .portada__titulo {
+    margin-top: 10rem;
   }
   body main .portada img {
     width: 50vw;

@@ -343,7 +343,7 @@ body{
 
 //425px
 
-@media (max-width:425px){
+@media (max-width:430px){
     body{
         header{
             .header__navbar{
@@ -360,6 +360,9 @@ body{
         main{
             .portada{
                 padding: 0 4rem 0 4rem;
+                .portada__titulo{
+                    margin-top:10rem;
+                }
                 img{
                     width: 50vw;
                     bottom: 10rem;
