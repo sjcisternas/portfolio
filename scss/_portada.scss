@@ -42,7 +42,7 @@ html {
 }
 
 section[id]{
-    scroll-margin-top: 12rem; 
+    scroll-margin-top: 10rem; 
 }
 
 body{
@@ -109,7 +109,6 @@ body{
         }
     }
     main{
-        padding-top: 21.3rem;
         /* Desde acá portada */
         .portada{
             display: flex;
@@ -117,8 +116,10 @@ body{
             justify-content: center;
             height: fit-content;
             width: 62.5rem;
+            height: 100vh;
             padding: 0 14rem 0 14rem;
             .portada__titulo{
+                margin-top:20rem;
                 display: block;
                 font-size: 12.8rem;
                 font-weight: 400;
@@ -169,7 +170,6 @@ body{
             }
         }
         main{
-            padding-top: 21.3rem;
             /* Desde acá portada */
             .portada{
                 padding: 0 12rem 0 12rem;
@@ -322,10 +322,8 @@ body{
             }
         }
         main{
-            padding-top: 16rem;
             .portada{
                 padding: 3rem 6rem 0 6rem;
-                margin-bottom: 15rem;
                 .portada__titulo{
                     font-size: 6rem;
                 }
@@ -362,7 +360,6 @@ body{
         main{
             .portada{
                 padding: 0 4rem 0 4rem;
-                margin-bottom: 25rem;
                 img{
                     width: 50vw;
                     bottom: 10rem;
@@ -379,7 +376,6 @@ body{
     body{
         main{
             .portada{
-                margin-bottom: 22rem;
                 .portada__titulo{
                     font-size: 5rem;
                 }
