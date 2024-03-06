@@ -145,3 +145,13 @@
         }
     }
 }
+
+//425px
+
+@media (max-width: 425px){
+    .trabajos{
+        .trabajos__titulo{
+            font-size: 2.2rem;
+        }
+    }
+}

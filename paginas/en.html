@@ -33,7 +33,7 @@
                 <li><a href="#portada" class="header__navbar-item" id="portadanav">Home</a></li>
                 <li><a href="#sobremi" class="header__navbar-item" id="sobreminav">About me</a></li>
                 <li><a href="#trabajos" class="header__navbar-item" id="trabajosnav">My work</a></li>
-                <li><a href="#contacto" class="header__navbar-item" id="contactonav">Let's talk</a></li>
+                <li><a href="#contacto" class="header__navbar-item" id="contactonav">Let's chat</a></li>
             </ul>
         </nav>
         <!-- SELECIÓN DE IDIOMA -->
@@ -56,11 +56,12 @@
         <!-- SOBRE MI -->
         <section class="sobremi seccion" id="sobremi">
             <article class="sobremi__parrafo">
+                <h2 class="sobremi__titulo">Sobre mi</h2>
+                <img src="../multimedia/perro.jpg" alt="Santiago Cisternas" class="sobremi__foto">
                 <p>Hello! My name is <b>Santiago</b>. I'm an antrhopologist. My strong background in social science research (I was a researcher at the Applied Ethnography Laboratory of UNLP for 2 years) and my interest in exploring new possibilities led me to the world of UX. I gained expertise in this field through courses, which allowed me to carry out design projects <b>(ARTIX)</b> and research projects <b>(Uber)</b>.</p>
                 <p><i>"And how did you get into the development world?"</i> you might be wondering. Well, through scientific outreach on the Internet. In 2022 and 2023, I worked at <b>Argonautas del Atlántico Sur</b>, an outrech online project. Wefaced with the project's need for its own platform, I decided to take the lead and learned about front-end development. You can see the result <b>here</b>. Since I started learning front-end development until today, I have learned various technologies: <i>HTML5, CSS3, Sass, Bootstrap 5, JavaScript, React, Node.js</i> and <i>MongoDB</i>.</p>
                 <p>All this journey allows me to have, nowadays, a broad vision of the product journey, from initial planning to the final launch.</p>
             </article>
-            <img src="../multimedia/perro.jpg" alt="Santiago Cisternas" class="sobremi__foto">
         <!-- Habilidades -->
             <!-- Lenguajes -->
             <div class="habilidades__lenguajes">
@@ -169,16 +170,25 @@
     <footer>
         <div class="footer__contacto seccion" id="contacto">
             <h5 class="footer__contacto-titulo">Let's chat</h5>
-            <p class="footer__contacto-pregunta">Do you have any project or idea you'd like to share with me?</p>
-            <form class="footer__contacto-form">
-                <input type="text" name="nombre" placeholder="Nombre*" class="footer__contacto-input">
-                <input type="email" name="mail" placeholder="Email*" class="footer__contacto-input">
-                <textarea type="text" placeholder="Hello Santi, I'd like to..." class="footer__contacto-msg"></textarea>
-                <input type="button" value="Enviar" class="footer__contacto-btn">
+            <p class="footer__contacto-pregunta">We can make your ideas become reality, we are just a mail away!</p>
+            <form class="footer__contacto-form" id="form-contacto">
+                <input type="text" name="nombre" placeholder="Name*" class="footer__contacto-input" id="form-nombre">
+                <div class="footer__contacto-error d-none" id="nombre-error">
+                    <p>Special characters are not allowed. Length should be between 3-20 characters. Please try again.</p>
+                </div>
+                <input name="mail" placeholder="Email*" class="footer__contacto-input" id="form-mail">
+                <div class="footer__contacto-error d-none" id="mail-error">
+                    <p>The email adrres is not valid. Please try again. Leading or trailing spaces are not accepted.</p>
+                </div>
+                <textarea placeholder="Hi Santi, I would like to work together..." class="footer__contacto-msg" id="form-msg"></textarea>
+                <div class="footer__contacto-msg-enviado d-none" id="form-exito">
+                    <p>Mail sent. I will contact you shortly!</p>
+                </div>
+                <input type="submit" value="Enviar" class="footer__contacto-btn">
             </form>
         </div>
         <div class="footer__redes">
-            <p class="footer__redes-pregunta">You can also reach me on my <b>social media!</b></p>
+            <p class="footer__redes-pregunta">Also, you can reach me on my <b>social media!</b></p>
             <div class="footer__redes-links">
                 <a href="https://github.com/sjcisternas"><img src="../multimedia/githubblanco.svg" alt="GitHub" class="footer__redes-iconos"></a>
                 <a href="https://www.linkedin.com/in/santiagojcisternas/"><img src="../multimedia/linkedinblanco.png" alt="LinkedIn" class="footer__redes-iconos"></a>
@@ -187,6 +197,7 @@
             </div>
             <img src="../multimedia/fondopuntos.png" alt="Fondo" class="footer__redes-fondo">
         </div>
+    </footer>
     </footer>
 </body>
 </html>

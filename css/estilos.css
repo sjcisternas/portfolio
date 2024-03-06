@@ -359,7 +359,7 @@ body main .portada img {
   }
   body main .portada {
     padding: 0 4rem 0 4rem;
-    margin-bottom: 20rem;
+    margin-bottom: 25rem;
   }
   body main .portada img {
     width: 50vw;
@@ -456,6 +456,11 @@ body main .portada img {
     margin-bottom: 2.6rem;
   }
 }
+@media (max-width: 1150px) {
+  .sobremi .sobremi__titulo {
+    font-size: 2.6rem;
+  }
+}
 @media (max-width: 924px) {
   body main .sobremi {
     padding: 5rem 8rem 0 8rem;
@@ -508,6 +513,9 @@ body main .portada img {
 @media (max-width: 425px) {
   body main .sobremi {
     padding: 0 4rem 0 4rem;
+  }
+  body main .sobremi .sobremi__titulo {
+    font-size: 2.2rem;
   }
 }
 @media (max-width: 375px) {
@@ -709,6 +717,11 @@ body main .portada img {
   }
   .trabajos .swiper .swiper-button-next {
     right: 30%;
+  }
+}
+@media (max-width: 425px) {
+  .trabajos .trabajos__titulo {
+    font-size: 2.2rem;
   }
 }
 footer {
@@ -943,7 +956,7 @@ footer .footer__redes .footer__redes-links a .footer__redes-iconos:hover {
     padding: 6rem;
   }
   body footer .footer__contacto .footer__contacto-titulo {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
   body footer .footer__contacto .footer__contacto-pregunta {
     font-size: 1.4rem;
@@ -963,6 +976,9 @@ footer .footer__redes .footer__redes-links a .footer__redes-iconos:hover {
 @media (max-width: 425px) {
   body footer {
     padding: 6rem 4rem 6rem 4rem;
+  }
+  body footer .footer__contacto .footer__contacto-titulo {
+    font-size: 2.2rem;
   }
 }
 

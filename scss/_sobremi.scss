@@ -89,6 +89,16 @@
     }
 }
 
+//1150px
+
+@media (max-width: 1150px){
+    .sobremi{
+        .sobremi__titulo{
+            font-size: 2.6rem;
+        }
+    }
+}
+
 //924px
 
 @media (max-width: 924px){
@@ -177,6 +187,9 @@
         main{
             .sobremi{
                 padding: 0 4rem 0 4rem;
+                .sobremi__titulo{
+                    font-size: 2.2rem;
+                }
             }
         }
     }
