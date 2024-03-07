@@ -24,7 +24,6 @@ const itemActivo = (entradas) => {
             }
             logo.classList.remove('nav-visible');
         }
-        console.log(entrada.target.id)
         if(entrada.isIntersecting && entrada.target.id === 'sobremi'){
             inicio.classList.remove('selected');
             sobremi.classList.add('selected');
@@ -35,7 +34,6 @@ const itemActivo = (entradas) => {
                 logo.classList.add('nav-visible');
             }
         }
-        console.log(entrada.target.id)
         if(entrada.isIntersecting && entrada.target.id === 'trabajos'){
             inicio.classList.remove('selected');
             sobremi.classList.remove('selected');
