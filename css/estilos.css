@@ -505,7 +505,7 @@ body main .portada img {
     margin-bottom: 1.6rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   body main .sobremi {
     padding: 0 4rem 0 4rem;
   }
@@ -714,7 +714,15 @@ body main .portada img {
     right: 30%;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 767px) {
+  .trabajos .swiper {
+    padding: 0 6rem 0 6rem;
+  }
+}
+@media (max-width: 430px) {
+  .trabajos .swiper {
+    padding: 0 4rem 0 4rem;
+  }
   .trabajos .trabajos__titulo {
     font-size: 2.2rem;
   }
@@ -968,7 +976,7 @@ footer .footer__redes .footer__redes-links a .footer__redes-iconos:hover {
     height: 3.4rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   body footer {
     padding: 6rem 4rem 6rem 4rem;
   }
